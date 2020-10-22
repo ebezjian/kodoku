@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>French Imports</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Goro's French Imporium</h1>
+    <h2>"let your eye's feast on the delights of French elegance"</h2>
+    <form id="furniture">
+      <div class="form-group">
+        <label for="name">What is your name?</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="address">What is your address?</label>
+        <input id="address" class="form-control" type="text">
+      </div>
+    
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="chairs" value="chaise" checked>
+        Chaise
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="chairs" value="faint" checked>
+        Fainting Couch
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="chairs" value="bistro" checked>
+        Bistro
+      </label>
+    </div>
+
+    <select class="form-control" id="fabric">
+      <option>Brocade</option>
+      <option>Tweed</option>
+      <option>Gingham</option>
+      <option>Houndstooth</option>
+    </select>
+
+    <div class="form-group">
+      <label for="delivery">Date of Delivery</label>
+      <input id="delivery" class="form-control" type="date">
+    </div>
+    <div class="form-group">
+      <label for="color">What color would you like your fabric?</label>
+      <input id="color" class="form-control" type="color">
+    </div>
+
+    <div id="receipt">
+      <h1>Arigato!<span class="name"></span> for your order.</h1>
+      <p>
+        You have honored us with an order of the <span class="chairs"></span> chair in the fabric choice of <span class="fabric"></span> which will be in the color of <span class="color"></span>. On <span class="delivery"></span> your order will arrive at the location of <span class="address"></span>. We hope you enjoy your new chair and please return again!
+      </p>
+    </div>
+    <button type="submit" class="btn">Checkout</button>
+    </form>
+  </div>
+</body>
+</html>
